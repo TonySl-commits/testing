@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expandable Text Box</title>
+<style>
+    #description-button {
+        color: #007BFF; /* Example color */
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #f8f9fa; /* Light gray background */
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Rounded edges */
+        padding: 10px 20px;
+        display: inline-block; /* Ensures padding and border-radius are respected */
+        transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+    #description-button:hover {
+        background-color: #e2e6ea; /* Darker gray on hover */
+    }
+    #description-content {
+        display: none; /* Hidden initially */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 5px;
+        background-color: #ecf3f5;
+        width: 95%;
+        transition: all 0.5s ease; /* Smooth expansion transition */
+    }
+    body {
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+<div id="description-button" onclick="toggleDescription()">Click to show description</div>
+<div id="description-content">
+    The location (24.617736315789475, 46.72563210526316) is mostly visited on Wednesday with a duration of 17 hours and 0 minutes.
+The location (24.6492386, 46.7259384) is mostly visited on Thursday with a duration of 0 hours and 0 minutes.
+The location (24.617644642857144, 46.72135285714286) is mostly visited on Saturday with a duration of 14 hours and 0 minutes.
+On Monday the location (24.617644642857144, 46.72135285714286) is mostly visited with a duration of 6 hours and 0 minutes.
+On Tuesday the user seems to have high movement activity.
+On Wednesday the location (24.617736315789475, 46.72563210526316) is mostly visited with a duration of 17 hours and 0 minutes.
+On Thursday the location (24.6492386, 46.7259384) is mostly visited with a duration of 0 hours and 0 minutes.
+On Saturday the location (24.617644642857144, 46.72135285714286) is mostly visited with a duration of 14 hours and 0 minutes.
+On Sunday the location (24.617644642857144, 46.72135285714286) is mostly visited with a duration of 5 hours and 1 minutes.
+</div>
+<script>
+    function toggleDescription() {
+        var content = document.getElementById('description-content');
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+            setTimeout(function() {
+                content.style.opacity = 1;
+            }, 10); // Short delay before starting opacity transition to ensure it is smooth
+        } else {
+            content.style.opacity = 0;
+            setTimeout(function() {
+                content.style.display = 'none';
+        }, 500); // Delay hiding the div until after the opacity transition finishes
+        }
+    }
+</script>
+</body>
+</html>

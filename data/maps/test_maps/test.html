@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aae9e00b8a80ed1bd3333e89a1597d04 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aae9e00b8a80ed1bd3333e89a1597d04" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aae9e00b8a80ed1bd3333e89a1597d04 = L.map(
+                "map_aae9e00b8a80ed1bd3333e89a1597d04",
+                {
+                    center: [33.9656039, 35.6277193],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8aeb683d921c0ad352c0e31bd95338d3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8aeb683d921c0ad352c0e31bd95338d3.addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var marker_e9dd648347b3302f2bdba93fe4cb60a9 = L.marker(
+                [33.9656039, 35.6277193],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_0400d5fc9ebfa6d4a1ada2e2101f416a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e9dd648347b3302f2bdba93fe4cb60a9.setIcon(icon_0400d5fc9ebfa6d4a1ada2e2101f416a);
+        
+    
+        var popup_9dfda7efd6fce0c8e4a6be371fd18aeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7e5c7d9c58d869b53267820b7949830 = $(`<div id="html_c7e5c7d9c58d869b53267820b7949830" style="width: 100.0%; height: 100.0%;">Start Point: (33.9656039, 35.6277193)</div>`)[0];
+                popup_9dfda7efd6fce0c8e4a6be371fd18aeb.setContent(html_c7e5c7d9c58d869b53267820b7949830);
+            
+        
+
+        marker_e9dd648347b3302f2bdba93fe4cb60a9.bindPopup(popup_9dfda7efd6fce0c8e4a6be371fd18aeb)
+        ;
+
+        
+    
+    
+            var marker_0b94c74ac535a5aa7759a61becd32385 = L.marker(
+                [33.8901091, 35.5585243],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_8b97baca8378c5ccfb17a406d32eb232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b94c74ac535a5aa7759a61becd32385.setIcon(icon_8b97baca8378c5ccfb17a406d32eb232);
+        
+    
+        var popup_70768daa1c5d082e616fb361155e6db1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9efdb4102b42a0270215a906dc44d710 = $(`<div id="html_9efdb4102b42a0270215a906dc44d710" style="width: 100.0%; height: 100.0%;">End Point: (33.8901091, 35.5585243)<br>Distance Traveled: 13.66 km</div>`)[0];
+                popup_70768daa1c5d082e616fb361155e6db1.setContent(html_9efdb4102b42a0270215a906dc44d710);
+            
+        
+
+        marker_0b94c74ac535a5aa7759a61becd32385.bindPopup(popup_70768daa1c5d082e616fb361155e6db1)
+        ;
+
+        
+    
+    
+            var poly_line_8bceed33ed83323913819aef3fbd030a = L.polyline(
+                [[33.9656039, 35.6277193], [33.9656718, 35.6276201], [33.9657318, 35.6275329], [33.9658331, 35.6274082], [33.9659799, 35.6272379], [33.9660433, 35.627156], [33.9660978, 35.6270957], [33.9661712, 35.6270608], [33.966298, 35.6270233], [33.9663436, 35.6269904], [33.9663653, 35.6269562], [33.9663786, 35.6269254], [33.966392, 35.6269012], [33.966407, 35.626861], [33.966417, 35.6268288], [33.9664253, 35.6267812], [33.966432, 35.6267242], [33.9664404, 35.626682], [33.9664476, 35.626627], [33.966452, 35.6265438], [33.9664643, 35.6264533], [33.9664801, 35.6263741], [33.9664587, 35.6263661], [33.966432, 35.6263554], [33.9663326, 35.626318], [33.9663517, 35.6262939], [33.9663795, 35.6262295], [33.9664251, 35.6260739], [33.9665605, 35.6258015], [33.9666762, 35.6256594], [33.9667996, 35.6255333], [33.9668708, 35.6254582], [33.9669603, 35.6253871], [33.9670048, 35.6253617], [33.9670404, 35.6253583], [33.967076, 35.625369], [33.9671261, 35.625414], [33.9671722, 35.6254924], [33.9672267, 35.6255796], [33.967269, 35.6256393], [33.9673085, 35.6256688], [33.9673685, 35.6256815], [33.9674117, 35.625679], [33.9674531, 35.625652], [33.9674903, 35.6256191], [33.9675849, 35.62554], [33.9679664, 35.6251498], [33.9684246, 35.6246562], [33.9686482, 35.6244189], [33.9686756, 35.6243826], [33.96877, 35.6242558], [33.9688119, 35.6241922], [33.9688715, 35.6241412], [33.9689462, 35.6240009], [33.9689584, 35.6239707], [33.9689733, 35.6238545], [33.9689724, 35.6237368], [33.9689511, 35.6236309], [33.9689401, 35.6235658], [33.9689188, 35.6234889], [33.9688655, 35.623415], [33.9688103, 35.6232919], [33.9687183, 35.6231254], [33.9684025, 35.6225641], [33.9680994, 35.6219041], [33.9680084, 35.6217288], [33.9679967, 35.6216918], [33.9680159, 35.6215556], [33.9680259, 35.6214906], [33.9680487, 35.6214242], [33.9680826, 35.6213724], [33.9681032, 35.621341], [33.968171, 35.6212994], [33.9682556, 35.6212606], [33.9683667, 35.6212429], [33.9683804, 35.6212463], [33.9685632, 35.6213084], [33.9687196, 35.6213576], [33.968815, 35.6213719], [33.9688895, 35.621392], [33.9690352, 35.6214094], [33.9691322, 35.6213983], [33.9692745, 35.6213767], [33.9698981, 35.621282], [33.9700618, 35.6212163], [33.9701597, 35.6211372], [33.9702409, 35.6210554], [33.9703299, 35.6209092], [33.9703766, 35.6207724], [33.9703866, 35.6206155], [33.9703855, 35.6203929], [33.9703855, 35.6200784], [33.9703966, 35.6199798], [33.9704077, 35.6199027], [33.9704211, 35.6198363], [33.9704672, 35.6197075], [33.9705692, 35.6195623], [33.9706979, 35.619452], [33.9713397, 35.6188709], [33.9714999, 35.6187334], [33.971655, 35.6185978], [33.9723205, 35.6180094], [33.9725902, 35.6177969], [33.972743, 35.6176852], [33.9730881, 35.617488], [33.9733417, 35.6173418], [33.9734295, 35.6172788], [33.9734963, 35.6172091], [33.9735663, 35.6171367], [33.9736375, 35.6170173], [33.973852, 35.6165521], [33.9738939, 35.6164549], [33.9741958, 35.6157915], [33.9742692, 35.6156252], [33.9737943, 35.6149641], [33.9737376, 35.6148883], [33.9735263, 35.6146248], [33.9733097, 35.6143702], [33.9734585, 35.6141192], [33.9736142, 35.613865], [33.9737821, 35.6135914], [33.9739363, 35.6133471], [33.9743213, 35.6127224], [33.9741179, 35.6125945], [33.9739514, 35.6124466], [33.9737237, 35.6122275], [33.9734279, 35.6119362], [33.973325, 35.6118608], [33.9731384, 35.6116816], [33.9730869, 35.6116215], [33.972755, 35.6112217], [33.9724686, 35.6108844], [33.9722851, 35.61069], [33.9721364, 35.6105471], [33.9718627, 35.6103011], [33.9716779, 35.6101281], [33.9715411, 35.6100033], [33.9714365, 35.6099242], [33.9712252, 35.609774], [33.9710205, 35.6096385], [33.9708537, 35.6095366], [33.970539, 35.609373], [33.9701374, 35.6091772], [33.9699013, 35.6090548], [33.9695279, 35.6088567], [33.9693461, 35.6087534], [33.9688909, 35.608516], [33.9683523, 35.6082109], [33.9682088, 35.6081285], [33.9679119, 35.6079709], [33.9676472, 35.6078321], [33.9676038, 35.6078019], [33.9675699, 35.6077825], [33.9675287, 35.607765], [33.9674792, 35.6077449], [33.9674244, 35.6077273], [33.9674139, 35.6077199], [33.9674023, 35.6077156], [33.9673902, 35.6077149], [33.9673783, 35.6077177], [33.9670415, 35.6075243], [33.9669903, 35.607517], [33.9663981, 35.6071991], [33.9655355, 35.6067444], [33.965327, 35.6066351], [33.9651368, 35.6065379], [33.9650349, 35.606482], [33.9649336, 35.6064388], [33.9648442, 35.6063622], [33.9647397, 35.6062925], [33.964634, 35.6062429], [33.9645505, 35.6062174], [33.9645143, 35.6062063], [33.9644305, 35.6061773], [33.9643425, 35.6061782], [33.964312, 35.6061767], [33.9641908, 35.6061678], [33.9641463, 35.606157], [33.9641068, 35.6061369], [33.9640613, 35.606115], [33.9640341, 35.6060726], [33.9640191, 35.6060088], [33.964013, 35.6058248], [33.9640355, 35.6057724], [33.9641525, 35.6054333], [33.9641965, 35.6053245], [33.9642444, 35.6052357], [33.9643227, 35.6051763], [33.9643897, 35.6051438], [33.964475, 35.6051296], [33.9645552, 35.6051421], [33.9646186, 35.6052131], [33.9646702, 35.6052974], [33.964696, 35.6053707], [33.9647107, 35.6054359], [33.964697, 35.6055219], [33.9646668, 35.6055929], [33.964621, 35.6056536], [33.9645575, 35.6057027], [33.9644785, 35.6057174], [33.9643025, 35.6057249], [33.9641832, 35.605659], [33.964086, 35.6056053], [33.9640056, 35.605563], [33.9630904, 35.6050646], [33.9627835, 35.6048975], [33.9626872, 35.6048527], [33.9623012, 35.6046511], [33.9619704, 35.6044651], [33.9615618, 35.6042245], [33.9613483, 35.6040904], [33.9609078, 35.6037739], [33.9606946, 35.6036005], [33.9605741, 35.6034909], [33.9604576, 35.6033874], [33.9597231, 35.6026675], [33.9593994, 35.6023656], [33.9589802, 35.6019402], [33.9587885, 35.6017388], [33.958566, 35.6015154], [33.9581096, 35.6010705], [33.9578726, 35.6008247], [33.9574864, 35.6003984], [33.9572026, 35.6000733], [33.9571253, 35.5999846], [33.9570011, 35.5998325], [33.9568693, 35.5996573], [33.9567356, 35.5994733], [33.9566187, 35.5993254], [33.9565274, 35.5991884], [33.9564326, 35.5990295], [33.9563807, 35.5989248], [33.9562823, 35.5987024], [33.9562426, 35.5986037], [33.9561124, 35.5982574], [33.9559503, 35.5976862], [33.955911, 35.597523], [33.9558554, 35.5972156], [33.9557673, 35.5965969], [33.9556244, 35.5956744], [33.955552, 35.5952975], [33.9554795, 35.595001], [33.955409, 35.5948079], [33.9553194, 35.5946263], [33.9551289, 35.5943239], [33.9549872, 35.5941559], [33.9548798, 35.5940489], [33.9546394, 35.5938723], [33.9543292, 35.5936969], [33.953081, 35.5931685], [33.9528743, 35.5930831], [33.9526449, 35.5929874], [33.9524102, 35.5928908], [33.9522801, 35.5928418], [33.9518897, 35.5927338], [33.9516693, 35.592699], [33.9514535, 35.5926682], [33.9512406, 35.592649], [33.9508895, 35.592632], [33.950538, 35.5926515], [33.9500774, 35.5926789], [33.9496501, 35.5927006], [33.9496301, 35.5927017], [33.9494675, 35.5927103], [33.949174, 35.5927259], [33.9487097, 35.5927274], [33.9479622, 35.5926749], [33.9473362, 35.5925985], [33.9467092, 35.5924879], [33.9463716, 35.5924161], [33.9460108, 35.5923102], [33.9459273, 35.5922844], [33.9453945, 35.5921216], [33.9445637, 35.591822], [33.9437427, 35.5915538], [33.9425276, 35.591267], [33.9418887, 35.5911471], [33.9413915, 35.5910466], [33.9408952, 35.5909481], [33.9407096, 35.5909121], [33.9402672, 35.5908233], [33.9394856, 35.5906214], [33.9384416, 35.5903316], [33.9379656, 35.5901937], [33.9373793, 35.5900163], [33.9371828, 35.5899632], [33.935714, 35.5896145], [33.9342361, 35.5892945], [33.9334086, 35.589125], [33.9315283, 35.5887124], [33.9308905, 35.588507], [33.9294729, 35.5879666], [33.9291068, 35.5878241], [33.9286884, 35.587678], [33.9284325, 35.5875988], [33.9275416, 35.5873324], [33.9266562, 35.5870931], [33.9258283, 35.5868678], [33.9250017, 35.5866531], [33.9241749, 35.5864307], [33.9235683, 35.5862808], [33.9233341, 35.5862159], [33.9223254, 35.5859385], [33.9213159, 35.5856192], [33.9210401, 35.5855215], [33.9208455, 35.5854595], [33.9204814, 35.5853411], [33.9200973, 35.5851851], [33.9199242, 35.5851029], [33.9195826, 35.5849306], [33.9174888, 35.5839269], [33.9168744, 35.5836334], [33.916035, 35.5832386], [33.9155306, 35.5829531], [33.9146593, 35.5824681], [33.9138888, 35.5820001], [33.9127785, 35.5812772], [33.9121817, 35.5808701], [33.9111684, 35.5802053], [33.910977, 35.5800752], [33.9107989, 35.5799532], [33.9106553, 35.5798566], [33.9104416, 35.5797037], [33.9101189, 35.579453], [33.9098762, 35.5792317], [33.9096659, 35.5790265], [33.9087357, 35.5780944], [33.908656, 35.578019], [33.9079132, 35.5773162], [33.9074855, 35.5769196], [33.9066875, 35.5761079], [33.9067798, 35.5759728], [33.9054908, 35.5744103], [33.9044758, 35.5731806], [33.9044405, 35.5731314], [33.9035827, 35.5719365], [33.9031314, 35.5725189], [33.90188, 35.5712642], [33.9016224, 35.570992], [33.9007051, 35.5700512], [33.8999218, 35.569264], [33.8991231, 35.5684514], [33.898755, 35.5680916], [33.8985141, 35.5678608], [33.8978959, 35.5672656], [33.8978079, 35.5670408], [33.8976323, 35.5668506], [33.8974055, 35.566598], [33.8973299, 35.566511], [33.8972636, 35.5664247], [33.8971855, 35.5663274], [33.8970792, 35.5661963], [33.8969505, 35.5660179], [33.896802, 35.5657337], [33.8967085, 35.5655268], [33.8966288, 35.5653771], [33.89656, 35.5652583], [33.8965139, 35.5651774], [33.8964658, 35.565105], [33.8963055, 35.5649302], [33.8962606, 35.5648782], [33.8962189, 35.5648372], [33.8961736, 35.564797], [33.8959833, 35.5646358], [33.8958744, 35.5645378], [33.8957042, 35.5643565], [33.8956308, 35.5642754], [33.8955707, 35.5641942], [33.8955202, 35.5641265], [33.8954685, 35.5640532], [33.8954054, 35.5639547], [33.895269, 35.5637363], [33.8949219, 35.5631303], [33.8945845, 35.5625445], [33.8942444, 35.5619395], [33.8940963, 35.5616827], [33.8939373, 35.561418], [33.893923, 35.5613944], [33.8931216, 35.5600664], [33.8922984, 35.5587043], [33.8922517, 35.5587402], [33.8922002, 35.5587648], [33.8920806, 35.5587851], [33.8914537, 35.5588162], [33.891322, 35.5588255], [33.891281, 35.5587624], [33.8910882, 35.5584465], [33.8907716, 35.5579305], [33.8901091, 35.5585243]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var marker_00c2a506161986f3643cfcc6420136a5 = L.marker(
+                [33.8949219, 35.5631303],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_281ef74198e8ec52bd9c7957fe2da300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00c2a506161986f3643cfcc6420136a5.setIcon(icon_281ef74198e8ec52bd9c7957fe2da300);
+        
+    
+        var popup_8fd1a396b48edb9829dcaa72e52ee28a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a7ec3e5be6574f9b4dffe45e93a43e = $(`<div id="html_05a7ec3e5be6574f9b4dffe45e93a43e" style="width: 100.0%; height: 100.0%;">Street: Avenue President Amine Gemayel<br>Distance: 12.92 km</div>`)[0];
+                popup_8fd1a396b48edb9829dcaa72e52ee28a.setContent(html_05a7ec3e5be6574f9b4dffe45e93a43e);
+            
+        
+
+        marker_00c2a506161986f3643cfcc6420136a5.bindPopup(popup_8fd1a396b48edb9829dcaa72e52ee28a)
+        ;
+
+        
+    
+    
+            var marker_3822d94accb073973aab7e11f5a6e1ec = L.marker(
+                [33.9643025, 35.6057249],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_41a63a3647a1d84b92d4dacfc2c288ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3822d94accb073973aab7e11f5a6e1ec.setIcon(icon_41a63a3647a1d84b92d4dacfc2c288ce);
+        
+    
+        var popup_5e8d24c79ea58c25447f42c6a91a3968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14a97aae2e622b62ff355319d4b7000d = $(`<div id="html_14a97aae2e622b62ff355319d4b7000d" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 3.72 km</div>`)[0];
+                popup_5e8d24c79ea58c25447f42c6a91a3968.setContent(html_14a97aae2e622b62ff355319d4b7000d);
+            
+        
+
+        marker_3822d94accb073973aab7e11f5a6e1ec.bindPopup(popup_5e8d24c79ea58c25447f42c6a91a3968)
+        ;
+
+        
+    
+    
+            var marker_7cb25048e891cc060d18735c9d1a1d36 = L.marker(
+                [33.9604576, 35.6033874],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_1ed7c1b01bb214167f90a2388ec2c437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cb25048e891cc060d18735c9d1a1d36.setIcon(icon_1ed7c1b01bb214167f90a2388ec2c437);
+        
+    
+        var popup_d1b3fbea4b0c11a522f6064d0ccd6540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2649739d1754c97e5a8cddd1ba233200 = $(`<div id="html_2649739d1754c97e5a8cddd1ba233200" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 4.29 km</div>`)[0];
+                popup_d1b3fbea4b0c11a522f6064d0ccd6540.setContent(html_2649739d1754c97e5a8cddd1ba233200);
+            
+        
+
+        marker_7cb25048e891cc060d18735c9d1a1d36.bindPopup(popup_d1b3fbea4b0c11a522f6064d0ccd6540)
+        ;
+
+        
+    
+    
+            var marker_ea337bea839768fe348899cf95ec0f23 = L.marker(
+                [33.9564326, 35.5990295],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_f8eed7abab5680843594a6e7e581f2a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea337bea839768fe348899cf95ec0f23.setIcon(icon_f8eed7abab5680843594a6e7e581f2a8);
+        
+    
+        var popup_17efc760a274736f0610fdacd461ae2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10c7fa66a9a1b02f97f1ca32cb381dc5 = $(`<div id="html_10c7fa66a9a1b02f97f1ca32cb381dc5" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 4.80 km</div>`)[0];
+                popup_17efc760a274736f0610fdacd461ae2a.setContent(html_10c7fa66a9a1b02f97f1ca32cb381dc5);
+            
+        
+
+        marker_ea337bea839768fe348899cf95ec0f23.bindPopup(popup_17efc760a274736f0610fdacd461ae2a)
+        ;
+
+        
+    
+    
+            var marker_9dbf8256d97027d2d8676a4da906732e = L.marker(
+                [33.9548798, 35.5940489],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_31a57b1de899b79ef6a28f8dc984b7b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9dbf8256d97027d2d8676a4da906732e.setIcon(icon_31a57b1de899b79ef6a28f8dc984b7b1);
+        
+    
+        var popup_abcbc6bfaf6ae8ebc72370ada2765ce3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_745977c07918cda855ad2ff0c060f0ec = $(`<div id="html_745977c07918cda855ad2ff0c060f0ec" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 5.32 km</div>`)[0];
+                popup_abcbc6bfaf6ae8ebc72370ada2765ce3.setContent(html_745977c07918cda855ad2ff0c060f0ec);
+            
+        
+
+        marker_9dbf8256d97027d2d8676a4da906732e.bindPopup(popup_abcbc6bfaf6ae8ebc72370ada2765ce3)
+        ;
+
+        
+    
+    
+            var marker_ae726bdd698503d448c8e1b56af31183 = L.marker(
+                [33.950538, 35.5926515],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_00a280b09e6ee00c8736906e2d723cce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae726bdd698503d448c8e1b56af31183.setIcon(icon_00a280b09e6ee00c8736906e2d723cce);
+        
+    
+        var popup_77ec80c7139ba98638c137a2f125c078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99489a718ecb4ec9d8f2abb1964abc15 = $(`<div id="html_99489a718ecb4ec9d8f2abb1964abc15" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 5.84 km</div>`)[0];
+                popup_77ec80c7139ba98638c137a2f125c078.setContent(html_99489a718ecb4ec9d8f2abb1964abc15);
+            
+        
+
+        marker_ae726bdd698503d448c8e1b56af31183.bindPopup(popup_77ec80c7139ba98638c137a2f125c078)
+        ;
+
+        
+    
+    
+            var marker_de17f39acd90aec43e6fcd9eaaf76d8a = L.marker(
+                [33.9459273, 35.5922844],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_3e20557b6ecb04879a578ca3e4436252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de17f39acd90aec43e6fcd9eaaf76d8a.setIcon(icon_3e20557b6ecb04879a578ca3e4436252);
+        
+    
+        var popup_3e163cec79671d7f7be3d6e3b0631131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361544f981139607aa34ae571d9ece6d = $(`<div id="html_361544f981139607aa34ae571d9ece6d" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 6.37 km</div>`)[0];
+                popup_3e163cec79671d7f7be3d6e3b0631131.setContent(html_361544f981139607aa34ae571d9ece6d);
+            
+        
+
+        marker_de17f39acd90aec43e6fcd9eaaf76d8a.bindPopup(popup_3e163cec79671d7f7be3d6e3b0631131)
+        ;
+
+        
+    
+    
+            var marker_70cdd0154b41a9bce26dec47fb78d4b3 = L.marker(
+                [33.9413915, 35.5910466],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_d08ca5b48839616ba1382c3887099dca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70cdd0154b41a9bce26dec47fb78d4b3.setIcon(icon_d08ca5b48839616ba1382c3887099dca);
+        
+    
+        var popup_ec627d432b8a88cbec797d82e6ddd64e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f97c48466cdfa7338a2909ee3b1a91c5 = $(`<div id="html_f97c48466cdfa7338a2909ee3b1a91c5" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 6.88 km</div>`)[0];
+                popup_ec627d432b8a88cbec797d82e6ddd64e.setContent(html_f97c48466cdfa7338a2909ee3b1a91c5);
+            
+        
+
+        marker_70cdd0154b41a9bce26dec47fb78d4b3.bindPopup(popup_ec627d432b8a88cbec797d82e6ddd64e)
+        ;
+
+        
+    
+    
+            var marker_e29f2fb592259e8cdc693303376bb07a = L.marker(
+                [33.9371828, 35.5899632],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_9e1c132b0718dc0f52d14dda61f3ce5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e29f2fb592259e8cdc693303376bb07a.setIcon(icon_9e1c132b0718dc0f52d14dda61f3ce5f);
+        
+    
+        var popup_fd1fd97416c78ccd12b2de231b807f41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd3ab6a901fd82db2805b4dcc0313dfd = $(`<div id="html_dd3ab6a901fd82db2805b4dcc0313dfd" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 7.47 km</div>`)[0];
+                popup_fd1fd97416c78ccd12b2de231b807f41.setContent(html_dd3ab6a901fd82db2805b4dcc0313dfd);
+            
+        
+
+        marker_e29f2fb592259e8cdc693303376bb07a.bindPopup(popup_fd1fd97416c78ccd12b2de231b807f41)
+        ;
+
+        
+    
+    
+            var marker_d187ee9eb8fef091cea2293a8a69613a = L.marker(
+                [33.9315283, 35.5887124],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_aead2189088090589b450bcca4f42a90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d187ee9eb8fef091cea2293a8a69613a.setIcon(icon_aead2189088090589b450bcca4f42a90);
+        
+    
+        var popup_538f018767132eecf2c467dccb3cb434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85cb29eac6ea2688db6bf9afc948ed1d = $(`<div id="html_85cb29eac6ea2688db6bf9afc948ed1d" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 8.02 km</div>`)[0];
+                popup_538f018767132eecf2c467dccb3cb434.setContent(html_85cb29eac6ea2688db6bf9afc948ed1d);
+            
+        
+
+        marker_d187ee9eb8fef091cea2293a8a69613a.bindPopup(popup_538f018767132eecf2c467dccb3cb434)
+        ;
+
+        
+    
+    
+            var marker_804dbbcc456b3d52f2467d93920ad2ac = L.marker(
+                [33.9266562, 35.5870931],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_450c654b6b00427bf9573844aff83e68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_804dbbcc456b3d52f2467d93920ad2ac.setIcon(icon_450c654b6b00427bf9573844aff83e68);
+        
+    
+        var popup_ee3a4e6dcf1121730d83125bbdef36f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_279994b99b1eb559aee3ebb9e47f10ed = $(`<div id="html_279994b99b1eb559aee3ebb9e47f10ed" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 8.60 km</div>`)[0];
+                popup_ee3a4e6dcf1121730d83125bbdef36f6.setContent(html_279994b99b1eb559aee3ebb9e47f10ed);
+            
+        
+
+        marker_804dbbcc456b3d52f2467d93920ad2ac.bindPopup(popup_ee3a4e6dcf1121730d83125bbdef36f6)
+        ;
+
+        
+    
+    
+            var marker_e06dfac68a3bac463b1d73feff6491df = L.marker(
+                [33.9223254, 35.5859385],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_e889a0e4c81b458b01b53ce607777578 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e06dfac68a3bac463b1d73feff6491df.setIcon(icon_e889a0e4c81b458b01b53ce607777578);
+        
+    
+        var popup_0a053a0e6f5635a4040fe0e581d11b2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d5bc93968fa2b1da2c1b61cac305b31 = $(`<div id="html_8d5bc93968fa2b1da2c1b61cac305b31" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 9.12 km</div>`)[0];
+                popup_0a053a0e6f5635a4040fe0e581d11b2e.setContent(html_8d5bc93968fa2b1da2c1b61cac305b31);
+            
+        
+
+        marker_e06dfac68a3bac463b1d73feff6491df.bindPopup(popup_0a053a0e6f5635a4040fe0e581d11b2e)
+        ;
+
+        
+    
+    
+            var marker_9cb0b95252d7906fa24956f38b3a9c66 = L.marker(
+                [33.9174888, 35.5839269],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_73d05e033d6557f8511ad8187a80d505 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9cb0b95252d7906fa24956f38b3a9c66.setIcon(icon_73d05e033d6557f8511ad8187a80d505);
+        
+    
+        var popup_3d70bef56c0845dd5da588917c199723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df3288c55a96f57b53d338b58c06e34d = $(`<div id="html_df3288c55a96f57b53d338b58c06e34d" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 9.64 km</div>`)[0];
+                popup_3d70bef56c0845dd5da588917c199723.setContent(html_df3288c55a96f57b53d338b58c06e34d);
+            
+        
+
+        marker_9cb0b95252d7906fa24956f38b3a9c66.bindPopup(popup_3d70bef56c0845dd5da588917c199723)
+        ;
+
+        
+    
+    
+            var marker_9b13f54e099d723bcb2e7d647bbe826e = L.marker(
+                [33.9138888, 35.5820001],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_c234514534cf6c8eaa3ec911a2701f90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b13f54e099d723bcb2e7d647bbe826e.setIcon(icon_c234514534cf6c8eaa3ec911a2701f90);
+        
+    
+        var popup_d59c187337a9ba030b7232b971f77809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deaa81a9732f6127bf7a6ab72b402437 = $(`<div id="html_deaa81a9732f6127bf7a6ab72b402437" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 10.15 km</div>`)[0];
+                popup_d59c187337a9ba030b7232b971f77809.setContent(html_deaa81a9732f6127bf7a6ab72b402437);
+            
+        
+
+        marker_9b13f54e099d723bcb2e7d647bbe826e.bindPopup(popup_d59c187337a9ba030b7232b971f77809)
+        ;
+
+        
+    
+    
+            var marker_618279117432087dab96b5bb6ff11b8d = L.marker(
+                [33.9096659, 35.5790265],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_af19ad00a4041aa4563fcf9cdf6d86a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_618279117432087dab96b5bb6ff11b8d.setIcon(icon_af19ad00a4041aa4563fcf9cdf6d86a1);
+        
+    
+        var popup_8648488077de923a0ff39cd256bd5d99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_418fb4c65c889813468a6f6ec2dfd709 = $(`<div id="html_418fb4c65c889813468a6f6ec2dfd709" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 10.69 km</div>`)[0];
+                popup_8648488077de923a0ff39cd256bd5d99.setContent(html_418fb4c65c889813468a6f6ec2dfd709);
+            
+        
+
+        marker_618279117432087dab96b5bb6ff11b8d.bindPopup(popup_8648488077de923a0ff39cd256bd5d99)
+        ;
+
+        
+    
+    
+            var marker_ae68ccbcf34dc88a01ddcde6b8c26e7a = L.marker(
+                [33.9031314, 35.5725189],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_b2219df2a8d2d60b59f9aa25fe637186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae68ccbcf34dc88a01ddcde6b8c26e7a.setIcon(icon_b2219df2a8d2d60b59f9aa25fe637186);
+        
+    
+        var popup_58841b29dd1ea268d9f04dcea919ab53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af9e14d45afe2076d182ff2881138cb = $(`<div id="html_7af9e14d45afe2076d182ff2881138cb" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 11.77 km</div>`)[0];
+                popup_58841b29dd1ea268d9f04dcea919ab53.setContent(html_7af9e14d45afe2076d182ff2881138cb);
+            
+        
+
+        marker_ae68ccbcf34dc88a01ddcde6b8c26e7a.bindPopup(popup_58841b29dd1ea268d9f04dcea919ab53)
+        ;
+
+        
+    
+    
+            var marker_ff68c2c8121eb594623f047bad932507 = L.marker(
+                [33.8985141, 35.5678608],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_dded3cb8e3d77ed147e4ce16735c7837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff68c2c8121eb594623f047bad932507.setIcon(icon_dded3cb8e3d77ed147e4ce16735c7837);
+        
+    
+        var popup_a3afe479b9f6aa610d6d032afaae7401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_533f550968a6f780c78568cb4aef6d90 = $(`<div id="html_533f550968a6f780c78568cb4aef6d90" style="width: 100.0%; height: 100.0%;">Street: أتستراد البحر<br>Distance: 12.34 km</div>`)[0];
+                popup_a3afe479b9f6aa610d6d032afaae7401.setContent(html_533f550968a6f780c78568cb4aef6d90);
+            
+        
+
+        marker_ff68c2c8121eb594623f047bad932507.bindPopup(popup_a3afe479b9f6aa610d6d032afaae7401)
+        ;
+
+        
+    
+    
+            var marker_b6f3bbb10937f6f1d834de4fcd350899 = L.marker(
+                [33.9649336, 35.6064388],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_65a78edbeb6d774a872224b804d23f08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6f3bbb10937f6f1d834de4fcd350899.setIcon(icon_65a78edbeb6d774a872224b804d23f08);
+        
+    
+        var popup_645013900a0051d669a82f213ebfc34e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_132201c16bbf32e824cc3fd28f5e55c0 = $(`<div id="html_132201c16bbf32e824cc3fd28f5e55c0" style="width: 100.0%; height: 100.0%;">Street: تقاطع ذوق مصبح<br>Distance: 3.39 km</div>`)[0];
+                popup_645013900a0051d669a82f213ebfc34e.setContent(html_132201c16bbf32e824cc3fd28f5e55c0);
+            
+        
+
+        marker_b6f3bbb10937f6f1d834de4fcd350899.bindPopup(popup_645013900a0051d669a82f213ebfc34e)
+        ;
+
+        
+    
+    
+            var marker_a1209fe4cf1ffe2704f069c161813a63 = L.marker(
+                [33.8978959, 35.5672656],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_7fb728003c0ea56f8e54eee9178bff3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1209fe4cf1ffe2704f069c161813a63.setIcon(icon_7fb728003c0ea56f8e54eee9178bff3f);
+        
+    
+        var popup_fdfec103a188e0dd4f11dd859af63be2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ea05e61eb51b510cd35750a4e99f7a = $(`<div id="html_e1ea05e61eb51b510cd35750a4e99f7a" style="width: 100.0%; height: 100.0%;">Street: تقاطع نهر الموت<br>Distance: 12.37 km</div>`)[0];
+                popup_fdfec103a188e0dd4f11dd859af63be2.setContent(html_e1ea05e61eb51b510cd35750a4e99f7a);
+            
+        
+
+        marker_a1209fe4cf1ffe2704f069c161813a63.bindPopup(popup_fdfec103a188e0dd4f11dd859af63be2)
+        ;
+
+        
+    
+    
+            var marker_41af6f676da210634661bb1945653451 = L.marker(
+                [33.891322, 35.5588255],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_b5a06c772644750aa872b2c99c44e449 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41af6f676da210634661bb1945653451.setIcon(icon_b5a06c772644750aa872b2c99c44e449);
+        
+    
+        var popup_f66ffb517eda1aef596415bd95967736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be381d217fc35dab4407afd94c733712 = $(`<div id="html_be381d217fc35dab4407afd94c733712" style="width: 100.0%; height: 100.0%;">Street: شارع بربر أبو جودة<br>Distance: 13.47 km</div>`)[0];
+                popup_f66ffb517eda1aef596415bd95967736.setContent(html_be381d217fc35dab4407afd94c733712);
+            
+        
+
+        marker_41af6f676da210634661bb1945653451.bindPopup(popup_f66ffb517eda1aef596415bd95967736)
+        ;
+
+        
+    
+    
+            var marker_a960d14555cd04c75afbc34fd4e09328 = L.marker(
+                [33.9067798, 35.5759728],
+                {}
+            ).addTo(map_aae9e00b8a80ed1bd3333e89a1597d04);
+        
+    
+            var icon_d018747c9b01771e7c88004d246b3caa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a960d14555cd04c75afbc34fd4e09328.setIcon(icon_d018747c9b01771e7c88004d246b3caa);
+        
+    
+        var popup_2527468927ebcdde56e579639ba72323 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb117c87a678b29cddfeaeac0e327b1a = $(`<div id="html_eb117c87a678b29cddfeaeac0e327b1a" style="width: 100.0%; height: 100.0%;">Street: طريق البحر<br>Distance: 11.20 km</div>`)[0];
+                popup_2527468927ebcdde56e579639ba72323.setContent(html_eb117c87a678b29cddfeaeac0e327b1a);
+            
+        
+
+        marker_a960d14555cd04c75afbc34fd4e09328.bindPopup(popup_2527468927ebcdde56e579639ba72323)
+        ;
+
+        
+    
+</script>
+</html>

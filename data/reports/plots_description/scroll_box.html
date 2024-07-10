@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expandable Text Box</title>
+<style>
+    /* Placeholder colors for default and active states */
+    .default-color {{
+        background-color: #ffffff; /* White background (default) */
+        color: #000000; /* Black text color (default) */
+        border-radius: 10px;
+        border: 1px solid #ccc; 
+    }}
+    
+    .active-color {{
+        background-color: #F1F4F6; /* Different background color when active */
+        color: #000000; /* Black text color when active */
+        border: 1px solid #ccc; 
+        border-radius: 10px 10px 0px 0px; /* Rounded edges at the top */
+    }}
+
+    #description-button {{
+        cursor: pointer;
+        text-decoration: none;
+        /* border: 1px solid #ccc; */
+        /*border-radius: 10px 10px 0px 0px; /* Rounded edges at the top */
+        padding: 10px 20px;
+        display: inline-block; /* Ensures padding and border-radius are respected */
+        transition: background-color 0.3s; /* Smooth transition for background color */
+        font-family: "Bahnschrift", sans-serif;
+        font-weight: lighter;
+    }}
+
+    /* Hover style */
+    #description-button:hover {{
+        background-color: #e2e6ea; /* Darker gray on hover */
+    }}
+
+    #description-content {{
+        display: none; /* Hidden initially */
+        border: 1px solid #ccc;
+        border-radius: 0px 10px 10px 10px; /* Rounded edges at the bottom */
+        padding: 10px;
+        margin-top: -1px; /* Align with the button */
+        background-color: #F1F4F6; /* Light gray background ecf3f5 for light blue*/
+        width: 98%;
+        transition: all 0.3s ease; /* Smooth expansion transition */
+        font-family: "Bahnschrift", sans-serif;
+        font-weight: lighter;
+    }}
+
+    body {{
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }}
+</style>
+</head>
+<body>
+<div id="description-button" class="default-color" onclick="toggleDescription()">Click to show description</div>
+<div id="description-content">
+    {content}
+</div>
+<script>
+    function toggleDescription() {{
+        var button = document.getElementById('description-button');
+        var content = document.getElementById('description-content');
+        button.classList.toggle('active-color'); // Toggle the active class
+        // Apply or remove the default class
+        if (button.classList.contains('active-color')) {{
+            button.classList.remove('default-color');
+        }} else {{
+            button.classList.add('default-color');
+        }}
+        
+        // Toggle content visibility
+        if (content.style.display === 'none' || content.style.display === '') {{
+            content.style.display = 'block';
+            setTimeout(function() {{
+                content.style.opacity = 1;
+            }}, 10); // Short delay before starting opacity transition to ensure it is smooth
+        }} else {{
+            content.style.opacity = 0;
+            setTimeout(function() {{
+                content.style.display = 'none';
+            }}, 500); // Delay hiding the div until after the opacity transition finishes
+        }}
+    }}
+</script>
+</body>
+</html>

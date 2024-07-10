@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: vcis
+Version: 1.0.3
+Summary: INVIA VCIS TOOLS PACKAGE
+Author: valoores LLC
+Author-email: digital@valoores
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Telecommunication
+License-File: LICENSE.txt
+Requires-Dist: cassandra-driver>=3.28.0
+Requires-Dist: folium>=0.15.0
+Requires-Dist: findspark>=2.0.1
+Requires-Dist: geopy>=2.4.0
+Requires-Dist: pandas==1.5.3
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: matplotlib>=3.5.3c
+Requires-Dist: setuptools>=65.3.0
+Requires-Dist: pydot>=1.4.2
+Requires-Dist: graphviz>=0.20.1
+Requires-Dist: networkx>=2.8.6
+Requires-Dist: shapely>=1.8.4
+Requires-Dist: requests>=2.28.1
+Requires-Dist: scikit-learn>=1.1.2
+Requires-Dist: openpyxl==3.1.2
+Requires-Dist: pyspark==3.3.3
+Requires-Dist: gpxpy>=1.6.2
+Requires-Dist: fastapi
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: plotly>=5.4.0
+Requires-Dist: fastdtw==0.3.4
+Requires-Dist: IPython==8.0.1
+Requires-Dist: haversine==2.8.0
+Requires-Dist: regex==2023.12.25
+Requires-Dist: bs4==0.0.2
+Requires-Dist: datapane==0.17.0
+Requires-Dist: oracledb==2.0.1
+Requires-Dist: reverse_geocoder
+Requires-Dist: transformers==4.39.0
+Requires-Dist: torch==2.2.1
+Requires-Dist: langchain_community
+Requires-Dist: osmnx
+Requires-Dist: bokeh
+Requires-Dist: streamlit==1.33.0
+Requires-Dist: langchain_groq
+Requires-Dist: pandasai
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: country_converter==1.2.0
+Requires-Dist: reportlab==4.2.0
+Requires-Dist: rdp

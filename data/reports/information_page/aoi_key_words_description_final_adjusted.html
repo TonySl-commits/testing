@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AOI Key Words Description</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body { font-family: "Bahnschrift", sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 100%; margin: auto; padding: 20px; padding-right: 0; padding-left: 0; }
+        h1 { text-align: left; margin-bottom: 20px; font-size: 24px; padding-left: 15px;}
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #ecf3f5; /* Light blue */
+        }
+        .table td, .table th {
+            font-family: "Bahnschrift", sans-serif;
+            font-weight: normal;
+        }
+        /* Make the first column bold */
+        .table th:nth-child(1), .table td:nth-child(1) {
+            font-weight: bold; /* Apply bold font weight */
+            width: 25%; /* Adjust width as needed */
+        }
+        /* Make the header of the second column bold */
+        .table th:nth-child(2) {
+            font-weight: bold; /* Apply bold font weight */
+            font-family: "Bahnschrift", sans-serif; /* Ensuring font consistency */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AOI Report</h1>
+        <table class="dataframe table table-striped table-hover">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Key Words</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Device Drop Down Menu</td>
+      <td>This is a dropdown menu that allows the user to select a device from the list of devices.</td>
+    </tr>
+    <tr>
+      <td>Start and End Dates</td>
+      <td>Shows the start and end dates of the selected period of time.</td>
+    </tr>
+    <tr>
+      <td>Total Hits</td>
+      <td>Shows the total number of hits recorded in the selected period of time.</td>
+    </tr>
+    <tr>
+      <td>Total Days</td>
+      <td>Shows the total number of days recorded in the selected period of time.</td>
+    </tr>
+    <tr>
+      <td>Geospatial Confidence Metrics</td>
+      <td>Shows the geospatial confidence metrics for the selected device.</td>
+    </tr>
+    <tr>
+      <td>Number of Hits Per Day of the Week</td>
+      <td>Shows the number of hits per day of the week for the selected device.</td>
+    </tr>
+    <tr>
+      <td>Number of Hits Per Month</td>
+      <td>Shows the number of hits per month for the selected device.</td>
+    </tr>
+    <tr>
+      <td>Location Likelihood with respect to Day of Week</td>
+      <td>Shows the location likelihood with respect to day of week for the selected device.</td>
+    </tr>
+    <tr>
+      <td>Estimated Current Location</td>
+      <td>Shows the estimated current location for the selected device based on the device history and the current time. This also shows the expected duration of stay at the current location along with the potential next location and the latter's confidence score.</td>
+    </tr>
+    <tr>
+      <td>Duration per Location with respect to Day of Week</td>
+      <td>Shows the duration per location with respect to day of week for the selected device.</td>
+    </tr>
+    <tr>
+      <td>Predicted Itenirary at current time</td>
+      <td>Shows the path taken by the device from the latest location to the next location.</td>
+    </tr>
+    <tr>
+      <td>Predicted Itenirary at current time AntPath</td>
+      <td>Shows the path taken by the device from the latest location to the next location.</td>
+    </tr>
+    <tr>
+      <td>Map</td>
+      <td>An interactive map that shows the location of the selected device along with its coordinates, type, and number of hits.</td>
+    </tr>
+    <tr>
+      <td>AOIs Summary Statistics</td>
+      <td>Shows the different AOIs for the selected device along with their coordinates, type, number of hits, and total days recorded.</td>
+    </tr>
+    <tr>
+      <td>Suspiciousness Evaluation</td>
+      <td>Shows the suspiciousness evaluation for the selected device. This evaluation is based on how likely this device is to be in location or not based on its history.</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>

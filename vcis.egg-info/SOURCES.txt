@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/vcis.egg-info/PKG-INFO
+src/vcis.egg-info/SOURCES.txt
+src/vcis.egg-info/dependency_links.txt
+src/vcis.egg-info/requires.txt
+src/vcis.egg-info/top_level.txt
